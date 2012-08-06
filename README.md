@@ -1,4 +1,4 @@
-# ultrayoshi's dotfiles
+# alexmarles's dotfiles
 
 ## Installation
 
