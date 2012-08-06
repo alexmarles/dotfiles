@@ -5,11 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="arrow"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -23,24 +19,38 @@ ZSH_THEME="arrow"
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rvm)
+plugins=(git bundler rails3 nyan)
 
 source $ZSH/oh-my-zsh.sh
-unsetopt correct_all
 
 # Customize to your needs...
-export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant/bin
-export JSTESTDRIVER_HOME=/home/david/bin
-export EDITOR=vim
+# export PATH=/Users/Alex/.rvm/gems/ruby-1.9.2-p290/bin:/Users/Alex/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/Alex/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/Alex/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 
-[[ -s "/home/david/.rvm/scripts/rvm" ]] && source "/home/david/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#ALIASES
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias install='brew install'
+alias gs='git status -sb'
+alias ga='git add .'
+alias gc='git commit -a'
+alias gl='git log --graph --oneline --decorate --all'
+alias gl2="git log --graph --pretty=format:'%Cred%h%Cgreen%d%Creset %s by %Cgreen %cn %Creset at %Cblue(%cr)'"
+alias transmission='sudo open -a transmission'
+alias rh='echo Rehashed! && rbenv rehash'
+alias deploy='git push heroku master'
+alias tmux='TERM=screen-256color-bce tmux'
 
+#FUNCTIONS
+mkcd() { mkdir -p "$@" && cd "$@"; }
+
+# TMUX
+# $HOME/.zshrc
 # Launch tmux by default
 if [[ "$TERM" != "screen-256color" ]]
 then
@@ -48,5 +58,12 @@ then
   exit
 fi
 
-# Fix autorenaming windows for tmux
-export DISABLE_AUTO_TITLE="true"
+# TMUXINATOR
+export EDITOR="/usr/bin/vim"
+
+# RBENV
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# RVM
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
