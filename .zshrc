@@ -59,10 +59,10 @@ then
 fi
 
 # TMUXINATOR
-export EDITOR="/usr/bin/vim"
+export EDITOR="/usr/local/bin/vim"
 
 # RBENV
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # RVM
