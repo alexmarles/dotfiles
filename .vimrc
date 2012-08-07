@@ -27,13 +27,6 @@ set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v]
 filetype plugin indent on
 set noswapfile
 
-" Handling long lines
-set wrap
-set textwidth=80
-set formatoptions=n
-set colorcolumn=80
-set tw=80
-
 " GUI
 set background=dark
 colorscheme solarized
