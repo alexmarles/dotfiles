@@ -36,15 +36,10 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias install='brew install'
-alias gs='git status -sb'
-alias ga='git add .'
-alias gc='git commit -a'
-alias gl='git log --graph --oneline --decorate --all'
-alias gl2="git log --graph --pretty=format:'%Cred%h%Cgreen%d%Creset %s by %Cgreen %cn %Creset at %Cblue(%cr)'"
-alias transmission='sudo open -a transmission'
 alias rh='echo Rehashed! && rbenv rehash'
 alias deploy='git push heroku master'
 alias tmux='TERM=screen-256color-bce tmux'
+alias bundle='bundle && rh'
 
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }

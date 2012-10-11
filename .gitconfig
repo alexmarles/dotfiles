@@ -11,3 +11,9 @@
 	interactive = auto
 [core]
 	editor = vim
+[alias]
+	gl = log --graph --oneline --decorate --all
+	gl2 = log --graph --pretty=format:'%Cred%h%Cgreen%d%Creset %s by %Cgreen %cn %Creset at %Cblue(%cr)'
+	gs = status -sb
+	ga = add .
+	gc = commit -am
