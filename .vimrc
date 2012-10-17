@@ -108,10 +108,6 @@ map <C-p> :cp<cr>
 " TComment
 map <leader>co :TComment<cr>
 
-" CommandT
-map <leader>o :CommandT<cr>
-:set wildignore+=*.o,*.obj,.git,tmp,*.png,*.jpg,*.svg,*.ttf,*.doc,*.pdf,*.gif,*.gz,*.xls,*.rbc
-
 "" --------------------- LaTeX configuration
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a singe file. This will confuse Latex-Suite. Set your grep
