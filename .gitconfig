@@ -12,8 +12,8 @@
 [core]
 	editor = vim
 [alias]
-	gl = log --graph --oneline --decorate --all
-	gl2 = log --graph --pretty=format:'%Cred%h%Cgreen%d%Creset %s by %Cgreen %cn %Creset at %Cblue(%cr)'
+	gl = log --graph --pretty=format:'%C(yellow bold)%h%C(red bold)%d%Creset %s %C(green bold) %cn %C(cyan bold)(%cr)' --all
+	gl2 = log --graph --oneline --decorate --all
 	gs = status -sb
 	ga = add .
-	gc = commit -am
+	gc = commit -a
