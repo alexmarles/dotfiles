@@ -24,6 +24,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git bundler rails3 nyan)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # Customize to your needs...
 
