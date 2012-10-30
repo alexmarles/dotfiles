@@ -39,7 +39,6 @@ alias install='brew install'
 alias rh='echo Rehashed! && rbenv rehash'
 alias deploy='git push heroku master'
 alias tmux='TERM=screen-256color-bce tmux'
-alias bundle='bundle && rh'
 
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }
