@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -39,6 +39,7 @@ alias install='brew install'
 alias rh='echo Rehashed! && rbenv rehash'
 alias deploy='git push heroku master'
 alias tmux='TERM=screen-256color-bce tmux'
+alias aafm='python ~/Applications/aafm/src/aafm-gui.py'
 
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }
@@ -58,3 +59,6 @@ export EDITOR="/usr/local/bin/vim"
 # RBENV
 export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# ADB
+PATH=$PATH:~/Android/android-sdk-mac_x86/platform-tools
