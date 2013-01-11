@@ -1,8 +1,5 @@
 [user]
 	name = Àlex Marlés
-[github]
-	user = alexmarles
-	token = 64fcdf461773245271b62f334f5320d4
 [color]
 	status = auto
 	branch = auto
