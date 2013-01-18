@@ -7,5 +7,9 @@ do
   if [ -L $HOME/$file ]; then
     unlink $HOME/$file
   fi
+  echo "Linking $file"
   ln -s $HOME/.dotfiles/$file $HOME
 done
+
+echo "Fetching submodules for vim plugins"
+git submodule update --init
