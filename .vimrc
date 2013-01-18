@@ -28,14 +28,10 @@ filetype plugin indent on
 set noswapfile
 
 " GUI
-set background=dark
-colorscheme solarized
-if has("gui_running")
-  set guioptions-=T
-  set background=light
-endif
 set t_Co=256
 set guifont=Consolas:h13
+colorscheme solarized
+set background=dark
 
 " use comma as <Leader> key instead of backslash
 let mapleader=","
