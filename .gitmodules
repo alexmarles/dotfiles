@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/tComment"]
 	path = .vim/bundle/tComment
 	url = git://github.com/vim-scripts/tComment.git
+[submodule ".vim/bundle/yaml.vim"]
+	path = .vim/bundle/yaml.vim
+	url = https://github.com/vim-scripts/yaml.vim.git
