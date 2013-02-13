@@ -9,6 +9,7 @@ set number
 set ruler
 set cursorline
 set cuc
+set laststatus=2
 set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v]
 "              | | | | |  |   |      |  |
 "              | | | | |  |   |      |  |
