@@ -61,3 +61,6 @@ eval "$(rbenv init -)"
 
 # ADB
 PATH=$PATH:~/Android/android-sdk-mac_x86/platform-tools
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
