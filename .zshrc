@@ -21,7 +21,7 @@ ZSH_THEME="af-magic"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler rails3 nyan)
+plugins=(brew git bundler rails3)
 
 source $ZSH/oh-my-zsh.sh
 
