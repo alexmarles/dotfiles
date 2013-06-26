@@ -59,6 +59,10 @@ export EDITOR="/usr/local/bin/vim"
 export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# RUBY ON RAILS
+export RUBY_GC_MALLOC_LIMIT=60000000
+export RUBY_FREE_MIN=200000
+
 # ADB
 PATH=$PATH:~/Android/android-sdk-mac_x86/platform-tools
 
