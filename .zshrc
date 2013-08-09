@@ -67,8 +67,10 @@ eval "$(rbenv init -)"
 export RUBY_GC_MALLOC_LIMIT=60000000
 export RUBY_FREE_MIN=200000
 
-# ADB
-PATH=$PATH:~/Android/android-sdk-mac_x86/platform-tools
+# ADT
+export PATH=${PATH}:~/Android/adt-bundle/sdk/platform-tools:~/Android/adt-bundle/sdk/tools
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+[[ -s /Users/alex/.nvm/nvm.sh ]] && . /Users/alex/.nvm/nvm.sh # This loads NVM
