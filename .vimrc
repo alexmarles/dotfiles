@@ -106,6 +106,9 @@ map <C-p> :cp<cr>
 map <leader>co :TComment<cr>
 
 "" --------------------- LaTeX configuration
+" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
+filetype plugin on
+
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a singe file. This will confuse Latex-Suite. Set your grep
 " program to always generate a file-name.
