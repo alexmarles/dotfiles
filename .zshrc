@@ -44,6 +44,8 @@ alias ios='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimul
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }
 
+apksign() { jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/Dropbox/Android/android.keystore "$@" alexmarles; }
+
 # TMUX
 # $HOME/.zshrc
 # Launch tmux by default
