@@ -44,7 +44,12 @@ alias ios='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimul
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }
 
-apksign() { jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/Dropbox/Android/android.keystore "$@" alexmarles; }
+apksign() {
+  jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ~/Dropbox/Android/android.keystore "$@" alexmarles;
+  zipalign -f -v 4 "$@" "aligned-$@";
+  rm "$@";
+  mv "aligned-$@" "$@";
+}
 
 # TMUX
 # $HOME/.zshrc
