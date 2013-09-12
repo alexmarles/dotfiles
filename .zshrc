@@ -39,6 +39,7 @@ alias rh='echo Rehashed! && rbenv rehash'
 alias deploy='git push heroku master'
 alias tmux='TERM=screen-256color-bce tmux'
 alias aafm='python ~/Applications/aafm/src/aafm-gui.py'
+alias ios='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }
