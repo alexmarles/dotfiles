@@ -13,3 +13,6 @@ done
 
 echo "Fetching submodules for vim plugins"
 git submodule update --init
+
+echo "Adding global ignores"
+git config --global core.excludesfile .gitignore_global
