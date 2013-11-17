@@ -23,6 +23,10 @@ ZSH_THEME="af-magic"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew git bundler rails3)
 
+# RBENV
+export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -62,10 +66,6 @@ fi
 
 # TMUXINATOR
 export EDITOR="/usr/local/bin/vim"
-
-# RBENV
-export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 # RUBY ON RAILS
 export RUBY_GC_MALLOC_LIMIT=60000000
