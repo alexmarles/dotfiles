@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="af-magic"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -22,7 +22,7 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew git bundler rails)
+plugins=(brew git bundler rails virtualenv)
 
 # RBENV
 export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH"
