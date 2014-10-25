@@ -39,12 +39,11 @@ alias egrep='egrep --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias install='brew install'
-alias rh='echo Rehashed! && rbenv rehash'
-alias deploy='git push heroku master'
 alias tmux='TERM=screen-256color-bce tmux'
-alias aafm='python ~/Applications/aafm/src/aafm-gui.py'
-alias ios='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+alias redis-server='redis-server ~/.redis/redis.conf&'
+alias vup='vagrant up'
+alias vssh='vagrant ssh'
+alias vhalt='vagrant halt'
 
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }
