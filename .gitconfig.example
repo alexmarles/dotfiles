@@ -1,6 +1,6 @@
 [user]
 	name = My Name
-	email = my@email.com
+	email = my@mail.com
 [color]
 	status = auto
 	branch = auto
@@ -16,3 +16,4 @@
 	gs = status -sb
 	ga = add .
 	gc = commit -a
+  f = git diff
