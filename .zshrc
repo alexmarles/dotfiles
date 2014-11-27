@@ -41,10 +41,17 @@ alias la='ls -A'
 alias l='ls -CF'
 alias tmux='TERM=screen-256color-bce tmux'
 alias redis-server='redis-server ~/.redis/redis.conf&'
+
+#Vagrant
 alias vup='vagrant up'
 alias vssh='vagrant ssh'
 alias vinit='vup && vssh'
 alias vhalt='vagrant halt'
+
+#Git
+alias gs='git gs'
+alias gl='git gl'
+alias gf='git fetch'
 
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }
