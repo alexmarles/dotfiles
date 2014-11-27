@@ -43,6 +43,7 @@ alias tmux='TERM=screen-256color-bce tmux'
 alias redis-server='redis-server ~/.redis/redis.conf&'
 alias vup='vagrant up'
 alias vssh='vagrant ssh'
+alias vinit='vup && vssh'
 alias vhalt='vagrant halt'
 
 #FUNCTIONS
