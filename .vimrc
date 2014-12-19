@@ -114,6 +114,8 @@ map <Leader>z :call I18nTranslateString()<CR>
 map <Leader>a= :Tabularize /=<CR>
 map <Leader>a: :Tabularize /:<CR>
 
+map <Leader>b :Gblame<CR>
+
 "" --------------------- LaTeX configuration
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
