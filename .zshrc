@@ -52,6 +52,8 @@ alias vhalt='vagrant halt'
 alias gs='git gs'
 alias gl='git gl'
 alias gf='git fetch'
+alias gc='git commit'
+alias gc!='git commit --amend'
 
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }
