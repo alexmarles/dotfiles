@@ -55,6 +55,9 @@ alias gf='git fetch'
 alias gc='git commit'
 alias gc!='git commit --amend'
 
+#Other aliases
+source $HOME/.shell/aliases
+
 #FUNCTIONS
 mkcd() { mkdir -p "$@" && cd "$@"; }
 
