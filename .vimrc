@@ -29,11 +29,8 @@ filetype plugin indent on
 set noswapfile
 
 " GUI
-set guifont=Consolas:h13
+let g:solarized_termtrans = 1
 set background=dark
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-let g:solarized_termcolors = 256
 colorscheme solarized
 
 " use comma as <Leader> key instead of backslash
