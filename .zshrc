@@ -86,10 +86,8 @@ export EDITOR="/usr/local/bin/vim"
 export RUBY_GC_MALLOC_LIMIT=60000000
 export RUBY_FREE_MIN=200000
 
-# ADT
-export PATH=${PATH}:~/Android/adt-bundle/sdk/platform-tools:~/Android/adt-bundle/sdk/tools
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-[[ -s /Users/alex/.nvm/nvm.sh ]] && . /Users/alex/.nvm/nvm.sh # This loads NVM
+# NVM
+[[ -s /Users/alex/.nvm/nvm.sh ]] && . /Users/alex/.nvm/nvm.sh
