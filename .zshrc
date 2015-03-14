@@ -90,4 +90,5 @@ export RUBY_GC_HEAP_FREE_SLOTS=200000
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # NVM
-[[ -s /Users/alex/.nvm/nvm.sh ]] && . /Users/alex/.nvm/nvm.sh
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
