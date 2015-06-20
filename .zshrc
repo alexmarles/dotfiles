@@ -43,6 +43,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias tmux='TERM=screen-256color-bce tmux'
 alias redis-server='redis-server ~/.redis/redis.conf&'
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 #Vagrant
 alias vup='vagrant up'
