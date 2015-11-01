@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Installing dotfiles"
 
 cp .gitconfig.example .gitconfig
 
@@ -25,3 +26,5 @@ read gitmail
 git config --global user.email "$gitmail"
 echo "Adding global ignores"
 git config --global core.excludesfile .gitignore_global
+
+echo "DONE! Restart your terminal NOW!"
