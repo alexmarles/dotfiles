@@ -26,7 +26,7 @@ zstyle ':completion:*' special-dirs true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew git bundler rails virtualenv)
 
-RBENV
+# RBENV
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
