@@ -68,6 +68,7 @@ inoremap <right> <nop>
 nnoremap <leader>v <C-w>v<C-w>l
 " Move between splits
 nnoremap <C-h> <C-w>h
+nnoremap <SID>I_wont_type_this <Plug>IMAP_JumpForward
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
