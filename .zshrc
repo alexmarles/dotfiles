@@ -74,11 +74,11 @@ apksign() {
 # TMUX
 # $HOME/.zshrc
 # Launch tmux by default
-if [[ "$TERM" != "screen-256color" ]]
-then
-  tmux attach-session -t default || tmux new-session -s default
-  exit
-fi
+# if [[ "$TERM" != "screen-256color" ]]
+# then
+#   tmux attach-session -t default || tmux new-session -s default
+#   exit
+# fi
 
 # TMUXINATOR
 export EDITOR="/usr/local/bin/vim"
