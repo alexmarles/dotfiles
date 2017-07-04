@@ -90,7 +90,7 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 " PLUGINS
 " Load all bundles in .vim/bundles
-call pathogen#infect()
+execute pathogen#infect()
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
@@ -113,3 +113,10 @@ map <Leader>a= :Tabularize /=<CR>
 map <Leader>a: :Tabularize /:<CR>
 
 map <Leader>b :Gblame<CR>
+
+" ALE
+let g:ale_linters = {
+\  'javascript': ['standard'],
+\}
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
